@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #1d4ed8;
+  --primary-dark: #1e40af;
+  --primary-soft: #e0ecff;
+  --accent: #f97316;
+  --bg: #f3f4f6;
+  --surface: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #6b7280;
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.12);
+  --shadow-subtle: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --max-width: 1120px;
+  --transition-fast: 0.18s ease-out;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: radial-gradient(
+    circle at top,
+    #e0edff 0%,
+    #f9fafb 45%,
+    #eef2ff 100%
+  );
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+[data-scroll-reveal],
+section {
+  --scroll-reveal-offset: 34px;
+}
+
+.scroll-reveal-base {
+  opacity: 0;
+  transform: translateY(var(--scroll-reveal-offset));
+  transition: opacity 0.65s ease, transform 0.65s ease;
+  will-change: opacity, transform;
+}
+
+.scroll-reveal-hidden {
+  opacity: 0;
+  transform: translateY(var(--scroll-reveal-offset));
+}
+
+.scroll-reveal-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Popover animations */
+@keyframes popoverSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popoverFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@layer utilities {
+  .container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.25rem;
+  }
+}
+
+/* Animated glow border for testimonial highlight */
+.glow-border {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 3px;
+  border-radius: 28px;
+  background: linear-gradient(
+    130deg,
+    rgba(59, 130, 246, 0),
+    rgba(59, 130, 246, 0.75),
+    rgba(168, 85, 247, 0.85),
+    rgba(45, 212, 191, 0.75),
+    rgba(59, 130, 246, 0)
+  );
+  background-size: 250% 250%;
+  animation: glow-border-move 8s linear infinite;
+  filter: drop-shadow(0 0 18px rgba(96, 165, 250, 0.35));
+}
+
+.glow-border__inner {
+  position: relative;
+  border-radius: 24px;
+  background: var(--glow-inner-bg, rgba(255, 255, 255, 0.95));
+}
+
+@keyframes glow-border-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow-border {
+    animation: none;
+  }
+}
