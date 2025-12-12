@@ -61,7 +61,7 @@ export function OurVision() {
       >
         <div className="absolute inset-0">
           <img
-            src="/PhotoMomemts/P1040609-scaled.jpg"
+            src="/images/PhotoMomemts/P1040609-scaled.jpg"
             alt="Scholars Academy campus"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -221,13 +221,13 @@ export function OurVision() {
 
           <div className="grid gap-8 md:grid-cols-2 px-2 md:px-4 my-6">
             <img
-              src="/PhotoMomemts/P1050333-300x169.jpg"
+              src="/images/PhotoMomemts/P1050333-300x169.jpg"
               alt="Students collaborating"
               className="w-full h-80 object-cover rounded-3xl shadow-lg"
               loading="lazy"
             />
             <img
-              src="/PhotoMomemts/P1040016-300x169.jpg"
+              src="/images/PhotoMomemts/P1040016-300x169.jpg"
               alt="Learning studios"
               className="w-full h-80 object-cover rounded-3xl shadow-lg"
               loading="lazy"

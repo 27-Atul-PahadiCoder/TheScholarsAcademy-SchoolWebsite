@@ -72,6 +72,10 @@ const lazyPages = {
     () => import("./components/beyond/Sports"),
     "Sports"
   ),
+  gamifiedLearning: lazyNamedComponent(
+    () => import("./components/Gamefied-Learning/components/ScholarsApp"),
+    "default"
+  ),
   arts: lazyNamedComponent(
     () => import("./components/beyond/ArtsCulture"),
     "ArtsCulture"
@@ -156,6 +160,7 @@ const routedPages: Record<string, RouteConfig> = {
   "/academics-programs": { component: lazyPages.academicsPrograms },
   "/theLearning": { component: lazyPages.learning },
   "/sports": { component: lazyPages.sports },
+  "/gamified-learning": { component: lazyPages.gamifiedLearning },
   "/arts-culture": { component: lazyPages.arts },
   "/clubs-societies": { component: lazyPages.clubs },
   "/community-service": { component: lazyPages.community },

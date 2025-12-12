@@ -391,16 +391,16 @@ export function Header() {
               })}
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-3">
               <a
-                href="#admissions"
-                className="px-3 py-1 text-sm rounded-full bg-white/70 text-blue-900 border border-slate-400/70 hover:bg-blue-50 transition-all duration-200 hover:scale-105"
+                href="/gamified-learning"
+                className="px-3 py-1 text-sm rounded-full bg-white/70 text-blue-900 border border-slate-400/70 hover:bg-blue-50 transition-all duration-200 hover:scale-105 mx-1 my-1"
               >
-                Prospectus
+                Gamified Learning
               </a>
               <a
                 href="#admissions"
-                className="inline-flex items-center gap-1.5 px-3 py-1 text-sm rounded-full bg-blue-700 text-white hover:bg-blue-800 transition-all duration-200 hover:scale-105 shadow-lg shadow-blue-500/45"
+                className="inline-flex items-center gap-1.5 px-3 py-1 text-sm rounded-full bg-blue-700 text-white hover:bg-blue-800 transition-all duration-200 hover:scale-105 shadow-lg shadow-blue-500/45 mx-1 my-1"
               >
                 <span className="font-bold text-white">New Admission</span>
                 <ChevronRight className="w-3.5 h-3.5" />
@@ -502,16 +502,16 @@ export function Header() {
                 );
               })}
             </div>
-            <div className="flex flex-wrap gap-1.5 mt-2">
+            <div className="flex flex-wrap gap-2 mt-2">
               <a
                 href="#admissions"
-                className="inline-flex items-center gap-1 px-3 py-1 text-xs rounded-full bg-blue-700 text-white hover:bg-blue-800 transition-colors"
+                className="inline-flex items-center gap-1 px-3 py-1 text-xs rounded-full bg-blue-700 text-white hover:bg-blue-800 transition-colors mx-1 my-1"
               >
                 New Admission
               </a>
               <a
                 href="#admissions"
-                className="px-3 py-1 text-xs rounded-full bg-white/70 text-blue-900 border border-slate-400/70 hover:bg-blue-50 transition-colors"
+                className="px-3 py-1 text-xs rounded-full bg-white/70 text-blue-900 border border-slate-400/70 hover:bg-blue-50 transition-colors mx-1 my-1"
               >
                 Prospectus
               </a>

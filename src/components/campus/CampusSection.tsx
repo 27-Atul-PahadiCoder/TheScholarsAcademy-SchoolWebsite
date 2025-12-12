@@ -20,7 +20,7 @@ export function CampusSection() {
           {/* Main gallery image */}
           <div className="relative rounded-[18px] overflow-hidden shadow-[0_10px_30px_rgba(15,23,42,0.08)]">
             <img
-              src="/PhotoMomemts/schoolTwo.jpg"
+              src="/images/PhotoMomemts/schoolTwo.jpg"
               alt="Scholars engaged in classroom learning"
               className="w-full object-cover aspect-[4/3] lg:aspect-[4/3]" // Aspect ratio stays the same, but you can tweak here if necessary
               loading="lazy"
@@ -39,7 +39,7 @@ export function CampusSection() {
             {/* Small gallery image */}
             <div className="relative rounded-xl overflow-hidden shadow-[0_10px_30px_rgba(15,23,42,0.08)]">
               <img
-                src="/PhotoMomemts/SchoolF.jpg"
+                src="/images/PhotoMomemts/SchoolF.jpg"
                 alt="Students at The Scholar's Academy"
                 className="w-full object-cover aspect-[4/3]"
                 loading="lazy"

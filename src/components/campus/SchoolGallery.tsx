@@ -1,5 +1,5 @@
 const photoModules = import.meta.glob(
-  "../../../public/PhotoMomemts/*.{jpg,jpeg,png,webp}"
+  "../../../public/images/PhotoMomemts/*.{jpg,jpeg,png,webp}"
 );
 
 type GalleryItem = {
@@ -21,7 +21,7 @@ const formatDescription = (filePath: string) => {
 
 const toPublicUrl = (filePath: string) => {
   const normalized = filePath.replace(/\\/g, "/");
-  const match = normalized.match(/\/PhotoMomemts\/.+$/);
+  const match = normalized.match(/\/images\/PhotoMomemts\/.+$/);
   return match ? match[0] : null;
 };
 

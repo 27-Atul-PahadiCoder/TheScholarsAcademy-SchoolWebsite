@@ -59,12 +59,12 @@ export function Sports() {
     description:
       "From football and athletics to traditional games, students learn teamwork, discipline and resilience on the field.",
     buttonText: "View Highlights",
-    backgroundImage: "/PhotoMomemts/P1050793-scaled.jpg",
+    backgroundImage: "/images/PhotoMomemts/P1050793-scaled.jpg",
     galleryImages: [
-      "/PhotoMomemts/P1050793-scaled.jpg",
-      "/PhotoMomemts/P1000759-scaled.jpg",
-      "/PhotoMomemts/P1000687-scaled.jpg",
-      "/PhotoMomemts/P1000681-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1000759-scaled.jpg",
+      "/images/PhotoMomemts/P1000687-scaled.jpg",
+      "/images/PhotoMomemts/P1000681-scaled.jpg",
     ],
   };
 
@@ -73,18 +73,18 @@ export function Sports() {
     description:
       "Chess, table tennis, yoga and fitness routines ensure every child finds a way to stay active and focused.",
     buttonText: "See Activities",
-    backgroundImage: "/PhotoMomemts/P1000694-scaled.jpg",
+    backgroundImage: "/images/PhotoMomemts/P1000694-scaled.jpg",
     galleryImages: [
-      "/PhotoMomemts/P1000694-scaled.jpg",
-      "/PhotoMomemts/P1040609-scaled.jpg",
-      "/PhotoMomemts/P1050159-scaled.jpg",
-      "/PhotoMomemts/P1050324-scaled.jpg",
+      "/images/PhotoMomemts/P1000694-scaled.jpg",
+      "/images/PhotoMomemts/P1040609-scaled.jpg",
+      "/images/PhotoMomemts/P1050159-scaled.jpg",
+      "/images/PhotoMomemts/P1050324-scaled.jpg",
     ],
   };
 
   const mosaicPhotos = [
-    "/PhotoMomemts/P1050793-scaled.jpg",
-    "/PhotoMomemts/P1050793-300x169.jpg",
+    "/images/PhotoMomemts/P1050793-scaled.jpg",
+    "/images/PhotoMomemts/P1050793-300x169.jpg",
   ];
 
   return (
@@ -107,7 +107,7 @@ export function Sports() {
           {/* Left: testimonial card with full-cover background image */}
           <div className="relative rounded-2xl overflow-hidden shadow-md text-white">
             <img
-              src="/PhotoMomemts/P1050793-scaled.jpg"
+              src="/images/PhotoMomemts/P1050793-scaled.jpg"
               alt="Sports testimonial"
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -179,32 +179,32 @@ export function Sports() {
         <div className="card mt-6">
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-2">
             <img
-              src="/PhotoMomemts/P1050793-scaled.jpg"
+              src="/images/PhotoMomemts/P1050793-scaled.jpg"
               alt="Sports gallery 1"
               className="w-full h-40 rounded-lg object-cover"
             />
             <img
-              src="/PhotoMomemts/P1000759-scaled.jpg"
+              src="/images/PhotoMomemts/P1000759-scaled.jpg"
               alt="Sports gallery 2"
               className="w-full h-40 rounded-lg object-cover"
             />
             <img
-              src="/PhotoMomemts/P1000687-scaled.jpg"
+              src="/images/PhotoMomemts/P1000687-scaled.jpg"
               alt="Sports gallery 3"
               className="w-full h-40 rounded-lg object-cover"
             />
             <img
-              src="/PhotoMomemts/P1000681-scaled.jpg"
+              src="/images/PhotoMomemts/P1000681-scaled.jpg"
               alt="Sports gallery 4"
               className="w-full h-40 rounded-lg object-cover"
             />
             <img
-              src="/PhotoMomemts/P1000694-scaled.jpg"
+              src="/images/PhotoMomemts/P1000694-scaled.jpg"
               alt="Sports gallery 5"
               className="w-full h-40 rounded-lg object-cover"
             />
             <img
-              src="/PhotoMomemts/P1040609-scaled.jpg"
+              src="/images/PhotoMomemts/P1040609-scaled.jpg"
               alt="Sports gallery 6"
               className="w-full h-40 rounded-lg object-cover"
             />

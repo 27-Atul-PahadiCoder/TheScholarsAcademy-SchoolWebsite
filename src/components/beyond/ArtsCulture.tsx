@@ -7,12 +7,12 @@ export function ArtsCulture() {
     description:
       "The ensemble programs at The Scholar's Academy, both instrumental and choral, offer numerous performance opportunities to all students, regardless of their level of expertise.",
     buttonText: "See Videos",
-    backgroundImage: "/PhotoMomemts/IMG_20230811_1241322-300x225.jpg", // Make sure this image path is correct
+    backgroundImage: "/images/PhotoMomemts/IMG_20230811_1241322-300x225.jpg", // Make sure this image path is correct
     galleryImages: [
-      "/PhotoMomemts/P1050793-scaled.jpg",
-      "/PhotoMomemts/P1050793-scaled.jpg",
-      "/PhotoMomemts/P1050793-scaled.jpg",
-      "/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
     ],
   };
 
@@ -21,12 +21,12 @@ export function ArtsCulture() {
     description:
       "The Scholar's Academy’s theatre program includes teacher-directed plays and many student-directed one-act plays. Courses cover acting, directing, public speaking, Shakespeare, and play production.",
     buttonText: "Theatre Videos",
-    backgroundImage: "/PhotoMomemts/IMG_20230811_1241322-300x225.jpg", // Make sure this image path is correct
+    backgroundImage: "/images/PhotoMomemts/IMG_20230811_1241322-300x225.jpg", // Make sure this image path is correct
     galleryImages: [
-      "/PhotoMomemts/P1050793-scaled.jpg",
-      "/PhotoMomemts/P1050793-scaled.jpg",
-      "/PhotoMomemts/P1050793-scaled.jpg",
-      "/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
     ],
   };
 

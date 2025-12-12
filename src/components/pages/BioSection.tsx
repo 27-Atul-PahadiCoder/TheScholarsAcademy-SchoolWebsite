@@ -174,7 +174,7 @@ const HeroSection: React.FC = () => {
         {showHeroPoster && (
           <div className="absolute inset-0">
             <img
-              src="/PhotoMomemts/P1040609-scaled.jpg"
+              src="/images/PhotoMomemts/P1040609-scaled.jpg"
               alt="Scholars Academy campus"
               className="w-full h-full object-cover"
             />
@@ -269,7 +269,7 @@ const HeroSection: React.FC = () => {
           <div className="relative rounded-3xl bg-slate-900/80 p-2 shadow-2xl shadow-black/50 border border-slate-800/80 transition-all duration-300 hover:shadow-[0_0_40px_rgba(99,102,241,0.6),0_0_80px_rgba(99,102,241,0.4)] hover:scale-105 hover:border-indigo-500/50 mt-[400px] mb-[-2px] group">
             <div className="overflow-hidden rounded-2xl bg-slate-900">
               <img
-                src="/Faculty-Staff/ScaledFounderImage.jpg"
+                src="/images/Faculty-Staff/ScaledFounderImage.jpg"
                 alt="Students at The Scholar's Academy"
                 className="h-64 w-full object-cover sm:h-72 lg:h-80 opacity-95 transition-transform duration-300 group-hover:scale-105"
               />

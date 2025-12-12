@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "/Faculty-Staff/logo.png";
+import logo from "/images/Faculty-Staff/logo.png";
 
 interface MediaItem {
   id: number;

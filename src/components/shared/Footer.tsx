@@ -2,31 +2,45 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = [
-    { href: '#about', label: 'About' },
-    { href: '#academics', label: 'Academics' },
-    { href: '#beyond', label: 'Beyond Academics' },
-    { href: '#admissions', label: 'Admission' },
-    { href: '#contact', label: 'Contact' },
+    { href: "#about", label: "About" },
+    { href: "#academics", label: "Academics" },
+    { href: "#beyond", label: "Beyond Academics" },
+    { href: "#admissions", label: "Admission" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
-    <footer className="border-t border-slate-300/80 py-5 mt-8 text-xs text-gray-600 bg-gray-50/85 backdrop-blur-xl">
+    <footer className="border-t border-slate-300/80 py-8 mt-8 text-xs text-gray-600 bg-gray-50/85 backdrop-blur-xl">
       <div className="container">
-        <div className="flex flex-wrap justify-between items-center gap-3">
-          <div>
-            © {currentYear} The Scholar&apos;s Academy, Pithoragarh. All rights reserved.
+        <div className="flex flex-wrap justify-between items-center gap-4">
+          <div className="text-sm">
+            © {currentYear} The Scholar&apos;s Academy, Pithoragarh. All rights
+            reserved.
           </div>
-          <div className="flex flex-wrap gap-3.5">
+          <div className="flex flex-wrap gap-4">
             {footerLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-xs text-gray-700 hover:text-blue-900 transition-colors"
+                className="text-xs text-gray-700 hover:text-blue-900 transition-colors font-semibold"
               >
                 {link.label}
               </a>
             ))}
           </div>
+        </div>
+        <div className="mt-6 text-center">
+          <span className="block text-sm text-gray-700 font-semibold mb-2">
+            Made with ❤️ by :
+          </span>
+          <a
+            href="https://www.linkedin.com/in/atul-oli27-intech/"
+            className="text-lg font-bold text-indigo-600 hover:text-indigo-800 transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Atul Oli
+          </a>
         </div>
       </div>
     </footer>

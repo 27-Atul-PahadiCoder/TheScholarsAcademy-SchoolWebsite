@@ -59,12 +59,12 @@ export function Sports() {
     description:
       "From football and athletics to traditional games, students learn teamwork, discipline and resilience on the field.",
     buttonText: "View Highlights",
-    backgroundImage: "/PhotoMomemts/P1050793-scaled.jpg",
+    backgroundImage: "/images/PhotoMomemts/P1050793-scaled.jpg",
     galleryImages: [
-      "/PhotoMomemts/P1050793-scaled.jpg",
-      "/PhotoMomemts/P1000759-scaled.jpg",
-      "/PhotoMomemts/P1000687-scaled.jpg",
-      "/PhotoMomemts/P1000681-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1000759-scaled.jpg",
+      "/images/PhotoMomemts/P1000687-scaled.jpg",
+      "/images/PhotoMomemts/P1000681-scaled.jpg",
     ],
   };
 
@@ -73,12 +73,12 @@ export function Sports() {
     description:
       "Chess, table tennis, yoga and fitness routines ensure every child finds a way to stay active and focused.",
     buttonText: "See Activities",
-    backgroundImage: "/PhotoMomemts/P1000694-scaled.jpg",
+    backgroundImage: "/images/PhotoMomemts/P1000694-scaled.jpg",
     galleryImages: [
-      "/PhotoMomemts/P1000694-scaled.jpg",
-      "/PhotoMomemts/P1040609-scaled.jpg",
-      "/PhotoMomemts/P1050159-scaled.jpg",
-      "/PhotoMomemts/P1050324-scaled.jpg",
+      "/images/PhotoMomemts/P1000694-scaled.jpg",
+      "/images/PhotoMomemts/P1040609-scaled.jpg",
+      "/images/PhotoMomemts/P1050159-scaled.jpg",
+      "/images/PhotoMomemts/P1050324-scaled.jpg",
     ],
   };
 

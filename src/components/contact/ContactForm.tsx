@@ -3,7 +3,7 @@ import { AdminButton } from "../admin/AdminButton";
 
 export function ContactForm() {
   const backgroundImage =
-    "/Faculty-Staff/pexels-photo-872955-qdawmgbb24l6wdvk53jcflsth25gu0xtbrs6m27ya4.jpg";
+    "/images/Faculty-Staff/pexels-photo-872955-qdawmgbb24l6wdvk53jcflsth25gu0xtbrs6m27ya4.jpg";
   const sectionRef = useRef<HTMLElement | null>(null);
   const [cardLift, setCardLift] = useState(0);
   const parallaxShift = Math.min(cardLift * 1.25, 220);

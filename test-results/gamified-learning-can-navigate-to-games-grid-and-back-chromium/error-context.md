@@ -1,0 +1,115 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e10]: Pithoragarh • CBSE School
+      - generic [ref=e11]: "Call us: +91 75258 38880"
+      - generic [ref=e12]: Mon–Sat • 8:30 AM – 3:00 PM
+    - link "New Admissions Open" [ref=e14] [cursor=pointer]:
+      - /url: "#admissions"
+      - generic [ref=e16]: New Admissions Open
+  - banner [ref=e17]:
+    - generic [ref=e19]:
+      - link "School Logo The Scholar's Academy Pithoragarh" [ref=e20] [cursor=pointer]:
+        - /url: /
+        - img "School Logo" [ref=e22]
+        - generic [ref=e23]:
+          - generic [ref=e24]: The Scholar's Academy
+          - generic [ref=e25]: Pithoragarh
+      - navigation [ref=e26]:
+        - generic [ref=e27]:
+          - button "About" [ref=e29]:
+            - text: About
+            - img [ref=e30]
+          - button "Academics" [ref=e33]:
+            - text: Academics
+            - img [ref=e34]
+          - button "Beyond Academics" [ref=e37]:
+            - text: Beyond Academics
+            - img [ref=e38]
+          - button "Admission" [ref=e41]:
+            - text: Admission
+            - img [ref=e42]
+          - button "School Life" [ref=e45]:
+            - text: School Life
+            - img [ref=e46]
+          - button "Contact" [ref=e49]:
+            - text: Contact
+            - img [ref=e50]
+        - generic [ref=e52]:
+          - link "Gamified Learning" [ref=e53] [cursor=pointer]:
+            - /url: /gamified-learning
+          - link "New Admission" [ref=e54] [cursor=pointer]:
+            - /url: "#admissions"
+            - generic [ref=e55]: New Admission
+            - img [ref=e56]
+  - main [ref=e58]:
+    - generic [ref=e59]:
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - button [ref=e63]:
+            - img [ref=e64]
+          - img [ref=e67]
+          - generic [ref=e69]: Scholars Play & Learn
+        - generic [ref=e70]:
+          - button [ref=e71]:
+            - img [ref=e72]
+          - generic [ref=e76]:
+            - img [ref=e77]
+            - generic [ref=e79]: "0"
+          - generic [ref=e80]:
+            - img [ref=e81]
+            - generic [ref=e87]: Lv 1
+      - generic [ref=e91]:
+        - heading "Choose Your Adventure! 🎯" [level=2] [ref=e92]
+        - generic [ref=e93]:
+          - generic [ref=e97]:
+            - img [ref=e99]
+            - heading "Math Challenge" [level=3] [ref=e109]
+            - paragraph [ref=e110]: Solve math problems and boost your skills!
+            - generic [ref=e111]:
+              - generic [ref=e112]: Play Now
+              - img [ref=e113]
+          - generic [ref=e118]:
+            - img [ref=e120]
+            - heading "Memory Match" [level=3] [ref=e122]
+            - paragraph [ref=e123]: Match pairs and train your memory!
+            - generic [ref=e124]:
+              - generic [ref=e125]: Play Now
+              - img [ref=e126]
+          - generic [ref=e131]:
+            - img [ref=e133]
+            - heading "Quiz Master" [level=3] [ref=e135]
+            - paragraph [ref=e136]: Answer questions and show your knowledge!
+            - generic [ref=e137]:
+              - generic [ref=e138]: Play Now
+              - img [ref=e139]
+          - generic [ref=e144]:
+            - img [ref=e146]
+            - heading "Word Puzzle" [level=3] [ref=e150]
+            - paragraph [ref=e151]: Find hidden words and expand vocabulary!
+            - generic [ref=e152]:
+              - generic [ref=e153]: Play Now
+              - img [ref=e154]
+  - contentinfo [ref=e156]:
+    - generic [ref=e157]:
+      - generic [ref=e158]:
+        - generic [ref=e159]: © 2025 The Scholar's Academy, Pithoragarh. All rights reserved.
+        - generic [ref=e160]:
+          - link "About" [ref=e161] [cursor=pointer]:
+            - /url: "#about"
+          - link "Academics" [ref=e162] [cursor=pointer]:
+            - /url: "#academics"
+          - link "Beyond Academics" [ref=e163] [cursor=pointer]:
+            - /url: "#beyond"
+          - link "Admission" [ref=e164] [cursor=pointer]:
+            - /url: "#admissions"
+          - link "Contact" [ref=e165] [cursor=pointer]:
+            - /url: "#contact"
+      - generic [ref=e166]:
+        - text: "Made with ❤️ by :"
+        - link "Atul Oli" [ref=e167] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/atul-oli27-intech/
+```

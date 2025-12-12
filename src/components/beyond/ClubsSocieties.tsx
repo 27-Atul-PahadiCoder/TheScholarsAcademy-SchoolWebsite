@@ -6,12 +6,12 @@ export function ClubsSocieties() {
     description:
       "The Debate Society encourages students to develop their critical thinking, public speaking, and argumentation skills. Members participate in local and national competitions and engage in debates on a variety of topics.",
     buttonText: "Join the Debate",
-    backgroundImage: "/PhotoMomemts/IMG_20230811_1241322-300x225.jpg",
+    backgroundImage: "/images/PhotoMomemts/IMG_20230811_1241322-300x225.jpg",
     galleryImages: [
-      "/PhotoMomemts/P1050793-scaled.jpg",
-      "/PhotoMomemts/P1050793-scaled.jpg",
-      "/PhotoMomemts/P1050793-scaled.jpg",
-      "/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
     ],
   };
 
@@ -20,18 +20,18 @@ export function ClubsSocieties() {
     description:
       "The Technology Club brings together students with a passion for innovation. From coding workshops to robotics challenges, members have opportunities to explore new technologies and work on projects that combine creativity and technical skills.",
     buttonText: "Explore Technology",
-    backgroundImage: "/PhotoMomemts/IMG_20230811_1241322-300x225.jpg",
+    backgroundImage: "/images/PhotoMomemts/IMG_20230811_1241322-300x225.jpg",
     galleryImages: [
-      "/PhotoMomemts/P1050793-scaled.jpg",
-      "/PhotoMomemts/P1050793-scaled.jpg",
-      "/PhotoMomemts/P1050793-scaled.jpg",
-      "/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
+      "/images/PhotoMomemts/P1050793-scaled.jpg",
     ],
   };
 
   const mosaicPhotos = [
-    "/PhotoMomemts/P1050793-scaled.jpg",
-    "/PhotoMomemts/P1050793-300x169.jpg",
+    "/images/PhotoMomemts/P1050793-scaled.jpg",
+    "/images/PhotoMomemts/P1050793-300x169.jpg",
   ];
 
   const ProgramSection = ({
@@ -103,7 +103,7 @@ export function ClubsSocieties() {
           {/* Left: testimonial card with full-cover background image */}
           <div className="relative rounded-2xl overflow-hidden shadow-md text-white">
             <img
-              src="/PhotoMomemts/P1050793-scaled.jpg"
+              src="/images/PhotoMomemts/P1050793-scaled.jpg"
               alt="John Dale"
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -171,36 +171,36 @@ export function ClubsSocieties() {
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-2">
             {/* Image 1 */}
             <img
-              src="/PhotoMomemts/P1050793-scaled.jpg"
+              src="/images/PhotoMomemts/P1050793-scaled.jpg"
               alt="Gallery 1"
               className="w-full h-40 rounded-lg object-cover"
             />
             {/* Image 2 */}
             <img
-              src="/PhotoMomemts/P1050793-scaled.jpg"
+              src="/images/PhotoMomemts/P1050793-scaled.jpg"
               alt="Gallery 2"
               className="w-full h-40 rounded-lg object-cover"
             />
             {/* Image 3 */}
             <img
-              src="/PhotoMomemts/P1050793-scaled.jpg"
+              src="/images/PhotoMomemts/P1050793-scaled.jpg"
               alt="Gallery 3"
               className="w-full h-40 rounded-lg object-cover"
             />
             {/* Image 4 */}
             <img
-              src="/PhotoMomemts/P1050793-scaled.jpg"
+              src="/images/PhotoMomemts/P1050793-scaled.jpg"
               alt="Gallery 4"
               className="w-full h-40 rounded-lg object-cover"
             />
             {/* Image 5 */}
             <img
-              src="/PhotoMomemts/P1050793-scaled.jpg"
+              src="/images/PhotoMomemts/P1050793-scaled.jpg"
               className="w-full h-40 rounded-lg object-cover"
             />
             {/* Image 6 */}
             <img
-              src="/PhotoMomemts/P1050793-scaled.jpg"
+              src="/images/PhotoMomemts/P1050793-scaled.jpg"
               alt="Gallery 6"
               className="w-full h-40 rounded-lg object-cover"
             />

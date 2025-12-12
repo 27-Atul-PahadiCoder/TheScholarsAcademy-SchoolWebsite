@@ -4,19 +4,19 @@ import { GallerySection } from "../gallery/GallerySection";
 export function OurStaff() {
   const communityImages = [
     {
-      src: "/Faculty-Staff/schoolCommunity.jpg",
+      src: "/images/Faculty-Staff/schoolCommunity.jpg",
       alt: "Students enjoying the courtyard",
     },
     {
-      src: "/Faculty-Staff/smilePhoto.png",
+      src: "/images/Faculty-Staff/smilePhoto.png",
       alt: "Festival celebration with parents and staff",
     },
-    { src: "/Faculty-Staff/enjoying.jpg", alt: "Creative classroom workshop" },
+    { src: "/images/Faculty-Staff/enjoying.jpg", alt: "Creative classroom workshop" },
     {
-      src: "/Faculty-Staff/smilePhoto.png",
+      src: "/images/Faculty-Staff/smilePhoto.png",
       alt: "Sports day cheering section",
     },
-    { src: "/Faculty-Staff/enjoying.jpg", alt: "Art fair gallery walk" },
+    { src: "/images/Faculty-Staff/enjoying.jpg", alt: "Art fair gallery walk" },
   ];
   const [communityIndex, setCommunityIndex] = useState(0);
   const [isPreviewing, setIsPreviewing] = useState(false);
@@ -118,17 +118,17 @@ export function OurStaff() {
             </p>
             <div className="rounded-lg shadow-lg overflow-hidden mb-8 flex space-x-4">
               <img
-                src="/Faculty-Staff/FounderImage.jpg"
+                src="/images/Faculty-Staff/FounderImage.jpg"
                 alt="Founder Image 1"
                 className="flex-1 h-64 object-cover"
               />
               <img
-                src="/Faculty-Staff/FounderImage.jpg"
+                src="/images/Faculty-Staff/FounderImage.jpg"
                 alt="Founder Image 2"
                 className="flex-1 h-64 object-cover"
               />
               <img
-                src="/Faculty-Staff/FounderImage.jpg"
+                src="/images/Faculty-Staff/FounderImage.jpg"
                 alt="Founder Image 3"
                 className="flex-1 h-64 object-cover"
               />
@@ -146,32 +146,32 @@ export function OurStaff() {
                 {
                   name: "Kamla Pant",
                   role: "Teacher",
-                  image: "/Faculty-Staff/kamlaPant.jpg",
+                  image: "/images/Faculty-Staff/kamlaPant.jpg",
                 },
                 {
                   name: "Anita Kapri",
                   role: "Teacher",
-                  image: "/Faculty-Staff/AnitaKapri.jpg",
+                  image: "/images/Faculty-Staff/AnitaKapri.jpg",
                 },
                 {
                   name: "Deepa Jukariya",
                   role: "Teacher",
-                  image: "/Faculty-Staff/DeepaJukariya.jpg",
+                  image: "/images/Faculty-Staff/DeepaJukariya.jpg",
                 },
                 {
                   name: "Beena Patni",
                   role: "Sr. Hindi Teacher",
-                  image: "/Faculty-Staff/BeenaPatni.jpg",
+                  image: "/images/Faculty-Staff/BeenaPatni.jpg",
                 },
                 {
                   name: "Prema Punera",
                   role: "Sr. Computer Teacher",
-                  image: "/Faculty-Staff/PremaPunera.jpg",
+                  image: "/images/Faculty-Staff/PremaPunera.jpg",
                 },
                 {
                   name: "Anupama Sanyal",
                   role: "Teacher",
-                  image: "/Faculty-Staff/AnupamaSanyal.jpg",
+                  image: "/images/Faculty-Staff/AnupamaSanyal.jpg",
                 },
               ].map((staff, index) => (
                 <div
