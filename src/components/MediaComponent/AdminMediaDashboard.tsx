@@ -156,15 +156,11 @@ const AdminMediaDashboard: React.FC = () => {
   const handleUpload = () => {
     // Mock upload logic
     if (file && location) {
-          console.log(`Uploading ${file.name} to ${location}`);
-          } else {
-            // This is for direct S3 or external storage upload
-            // The file might not be immediately available on the server
-          }
-      setShowAddModal(false);
-      setFile(null);
-      setLocation("");
+      console.log(`Uploading ${file.name} to ${location}`);
     }
+    setShowAddModal(false);
+    setFile(null);
+    setLocation("");
   };
 
   const filteredMedia = media
