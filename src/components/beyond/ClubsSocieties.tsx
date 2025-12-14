@@ -55,9 +55,9 @@ export function ClubsSocieties() {
               <p className="mb-6 text-sm md:text-base leading-relaxed opacity-90">
                 {description}
               </p>
-              <button className="bg-white text-black px-8 py-2 rounded-full hover:bg-gray-200 transition-all shadow-md">
-                {buttonText}
-              </button>
+              <button className="bg-white/30 backdrop-blur-md text-white px-8 py-2 rounded-full hover:bg-white/40 transition-all shadow-md">
+              {buttonText}
+            </button>
             </div>
           </div>
         </div>
@@ -133,7 +133,7 @@ export function ClubsSocieties() {
               <h4 className="text-xl font-bold mb-2">
                 "Thanks to the program, I was able to create lifelong memories"
               </h4>
-              <div className="text-sm opacity-90">— Cynthia Morgan</div>
+              <div className="text-sm opacity-90 text-gray-800">— Cynthia Morgan</div>
             </div>
           </div>
 
@@ -154,7 +154,7 @@ export function ClubsSocieties() {
               </div>
             </div>
 
-            <div className="rounded-2xl bg-emerald-900 text-white p-5 shadow-md flex flex-col justify-between">
+            <div className="rounded-2xl bg-gray-100 text-gray-800 p-5 shadow-md flex flex-col justify-between">
               <div className="text-xs opacity-80 mb-3">Review</div>
               <div>
                 <h4 className="text-lg font-semibold mb-2">

@@ -98,12 +98,13 @@ export function AdminDashboard() {
     }
     // Debug / feedback
     try {
-      // eslint-disable-next-line no-console
-      console.log("[AdminDashboard] toggled:", suboptionId, {
-        wasUnlocked: isCurrentlyUnlocked,
-        newUnlockedState: getUnlockedState()[suboptionId],
-        localStorage: localStorage.getItem("scholar-academy-unlocks"),
-      });
+    setSuboptions(updatedSuboptions);
+    console.log("[AdminDashboard] toggled:", suboptionId, {
+      wasUnlocked: isCurrentlyUnlocked,
+      newUnlockedState: getUnlockedState()[suboptionId],
+      localStorage: localStorage.getItem("scholar-academy-unlocks"),
+    });
+    saveAdminPanelState(updatedSuboptions);
     } catch (e) {
       // ignore
     }

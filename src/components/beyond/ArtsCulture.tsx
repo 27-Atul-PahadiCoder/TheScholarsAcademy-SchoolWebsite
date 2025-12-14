@@ -1,5 +1,3 @@
-
-
 export function ArtsCulture() {
   // Define the music and theatre program details
   const musicProgram = {
@@ -57,7 +55,7 @@ export function ArtsCulture() {
               <p className="mb-6 text-sm md:text-base leading-relaxed opacity-90">
                 {description}
               </p>
-              <button className="bg-white text-black px-8 py-2 rounded-full hover:bg-gray-200 transition-all shadow-md">
+              <button className="bg-white/30 backdrop-blur-md text-white px-8 py-2 rounded-full hover:bg-white/40 transition-all shadow-md">
                 {buttonText}
               </button>
             </div>

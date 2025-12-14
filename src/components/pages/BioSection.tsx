@@ -663,7 +663,16 @@ const FinalCallToAction: React.FC = () => {
             fillMode="cover"
           />
         </div>
-        <div className="absolute inset-0 bg-slate-900/55" />
+        {/* Left White Section */}
+        <div
+          className="absolute inset-y-0 left-0 bg-white z-[5]"
+          style={{ width: "calc((100vw - 84rem) / 2)" }}
+        ></div>
+        {/* Right White Section */}
+        <div
+          className="absolute inset-y-0 right-0 bg-white z-[5]"
+          style={{ width: "calc((100vw - 84rem) / 2)" }}
+        ></div>
       </div>
 
       {/* Content Section */}

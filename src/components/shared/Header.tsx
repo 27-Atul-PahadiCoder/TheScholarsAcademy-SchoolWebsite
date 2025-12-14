@@ -246,7 +246,7 @@ export function Header() {
           <a href="/" className="flex items-center gap-2 flex-shrink-0 group">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-200 to-blue-700 flex items-center justify-center shadow-lg shadow-blue-500/55 group-hover:shadow-blue-600/70 group-hover:scale-110 transition-all duration-300 cursor-pointer">
               <img
-                src="src\\components\\images\\logo\\logo.png"
+                src="/images/logo/logo.png"
                 alt="School Logo"
                 className="w-full h-full object-cover rounded-xl"
               />

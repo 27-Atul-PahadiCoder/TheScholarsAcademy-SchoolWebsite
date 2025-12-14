@@ -246,7 +246,7 @@ export function Header() {
           <a href="/" className="flex items-center gap-2 flex-shrink-0 group">
             <div className="w-9 h-9 rounded-full bg-black flex items-center justify-center">
               <img
-                src="src\\components\\images\\logo\\logo.png"
+                src="/images/logo/logo.png"
                 alt="School Logo"
                 className="w-7 h-7 rounded-full object-cover"
               />

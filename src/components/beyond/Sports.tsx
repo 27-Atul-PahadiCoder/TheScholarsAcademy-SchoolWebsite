@@ -30,7 +30,7 @@ const ProgramSection: React.FC<Program> = ({
             <p className="mb-6 text-sm md:text-base leading-relaxed opacity-90">
               {description}
             </p>
-            <button className="bg-white text-black px-8 py-2 rounded-full hover:bg-gray-200 transition-all shadow-md">
+            <button className="bg-white/30 backdrop-blur-md text-white px-8 py-2 rounded-full hover:bg-white/40 transition-all shadow-md">
               {buttonText}
             </button>
           </div>
@@ -138,7 +138,7 @@ export function Sports() {
               <h4 className="text-xl font-bold mb-2">
                 "Sports day was an unforgettable experience for our child."
               </h4>
-              <div className="text-sm opacity-90">— Proud Parent</div>
+              <div className="text-sm opacity-90 text-gray-800">— Proud Parent</div>
             </div>
           </div>
 
@@ -150,7 +150,8 @@ export function Sports() {
                 alt="Students playing sports"
                 className="w-full h-48 object-cover block"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/35 to-transparen
+              t" />
               <div className="absolute left-4 bottom-4 text-white">
                 <h5 className="text-lg font-semibold">
                   "Every student finds a game they love."
@@ -159,7 +160,7 @@ export function Sports() {
               </div>
             </div>
 
-            <div className="rounded-2xl bg-emerald-900 text-white p-5 shadow-md flex flex-col justify-between">
+            <div className="rounded-2xl bg-gray-100 text-gray-800 p-5 shadow-md flex flex-col justify-between">
               <div className="text-xs opacity-80 mb-3">Highlight</div>
               <div>
                 <h4 className="text-lg font-semibold mb-2">

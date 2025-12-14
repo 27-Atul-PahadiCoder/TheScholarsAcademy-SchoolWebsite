@@ -115,10 +115,10 @@ const CustomVideoPlayer: React.FC<VideoPlayerProps> = ({
 
       Object.assign(iframe.style, {
         position: "absolute",
-        top: "0",
+        top: "50%", // Change from "0"
         left: "50%",
-        transform: `translate(-50%, -120%) scale(${scale})`,
-        transformOrigin: "top center",
+        transform: `translate(-50%, -50%) scale(${scale})`, // Change from translate(-50%, -120%)
+        transformOrigin: "center center", // Change from "top center"
         width: "100%",
         height: "100%",
       });
@@ -154,21 +154,22 @@ const CustomVideoPlayer: React.FC<VideoPlayerProps> = ({
 
       playerRef.current = new YT.Player(playerContainerRef.current, {
         videoId,
-        playerVars: {
-          autoplay: 1,
-          controls: 0,
-          loop: 1,
-          playlist: videoId,
-          showinfo: 0,
-          rel: 0,
-          modestbranding: 1,
-          iv_load_policy: 3,
-          disablekb: 1,
-          fs: 0,
-          playsinline: 1,
-          mute: 1,
-        },
-        events: {
+          playerVars: {
+            autoplay: 1,
+            controls: 0,
+            loop: 1,
+            playlist: videoId,
+            showinfo: 0,
+            rel: 0,
+            modestbranding: 1,
+            iv_load_policy: 3,
+            disablekb: 1,
+            fs: 0,
+            playsinline: 1,
+            mute: 1,
+            origin: window.location.origin,
+            enablejsapi: 1, // Explicitly enable JS API
+          },        events: {
           onReady: (event: any) => {
             event.target.mute();
             event.target.playVideo();

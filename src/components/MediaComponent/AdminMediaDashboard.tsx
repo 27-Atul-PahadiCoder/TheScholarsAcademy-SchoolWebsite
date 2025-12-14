@@ -156,7 +156,11 @@ const AdminMediaDashboard: React.FC = () => {
   const handleUpload = () => {
     // Mock upload logic
     if (file && location) {
-      console.log(`Uploading ${file.name} to ${location}`);
+          console.log(`Uploading ${file.name} to ${location}`);
+          } else {
+            // This is for direct S3 or external storage upload
+            // The file might not be immediately available on the server
+          }
       setShowAddModal(false);
       setFile(null);
       setLocation("");
@@ -260,10 +264,10 @@ const AdminMediaDashboard: React.FC = () => {
                     <img
                       src={item.url}
                       alt={item.filename}
-                      className="w-20 h-20 object-cover"
+                      className="w-10 h-10 object-cover"
                     />
                   ) : (
-                    <video src={item.url} className="w-20 h-20 object-cover" />
+                    <video src={item.url} className="w-10 h-10 object-cover" />
                   )}
                 </td>
                 {/* <td className="py-2 px-4 border-b">{item.filename}</td> */}
