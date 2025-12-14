@@ -1,6 +1,7 @@
 
 import React from 'react';
 import Modal from './Modal';
+import { Plus } from "lucide-react";
 
 interface DeleteModalProps {
   isOpen: boolean;
@@ -17,7 +18,12 @@ const DeleteModal: React.FC<DeleteModalProps> = ({ isOpen, onClose, onDelete, pa
 
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
-      <h2 className="text-xl font-bold mb-4">Delete Image</h2>
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="text-xl font-bold">Delete Image</h2>
+        <button onClick={onClose}>
+          <Plus size={24} className="transform rotate-45" />
+        </button>
+      </div>
       <p className="mb-4">Are you sure you want to delete this image?</p>
       <p className="mb-4 bg-gray-100 p-2 rounded">{path}</p>
       <div className="flex justify-end">

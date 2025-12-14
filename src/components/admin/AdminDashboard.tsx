@@ -18,6 +18,7 @@ import {
 } from "../../config/suboptionsLocks";
 import { loginAdmin, logoutAdmin, hasAdminSession } from "../../api/admin";
 import AdminMediaDashboard from "../MediaComponent/AdminMediaDashboard";
+import ErrorBoundary from "../ErrorBoundary";
 
 interface AdminStats {
   totalSuboptions: number;
@@ -59,7 +60,6 @@ export function AdminDashboard() {
     try {
       await loginAdmin(email, passwordInput);
       setIsAuthenticated(true);
-      sessionStorage.setItem("admin-authenticated", "true");
       setPasswordInput("");
       setMessage("✓ Authentication successful!");
     } catch (err) {
@@ -573,8 +573,10 @@ export function AdminDashboard() {
             );
           })}
         </div>
-
-        <AdminMediaDashboard />
+        
+        <ErrorBoundary>
+          <AdminMediaDashboard />
+        </ErrorBoundary>
       </div>
     </div>
   );

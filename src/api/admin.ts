@@ -1,4 +1,6 @@
-import { request, setAdminToken, clearAdminToken, getAdminToken } from "./http";
+import { z } from "zod";
+
+const TOKEN_KEY = "school-admin-token";
 
 export type AdminLoginResponse = {
   token: string;
@@ -11,35 +13,32 @@ export type AdminLoginResponse = {
 };
 
 export async function loginAdmin(email: string, password: string) {
-  // Mocking the API call to allow frontend-only development
-  if (email === "founder@school.com" && password === "schol@r2025") {
-    const mockResponse = {
-      token: "mock-admin-token",
-      user: {
-        id: "1",
-        email: "founder@school.com",
-        name: "Super Admin",
-        role: "admin",
-      },
-    };
-    setAdminToken(mockResponse.token);
-    // Simulate a delay to make it seem like a real API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    return mockResponse;
-  } else {
-    // Simulate a delay and then throw an error
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    throw new Error("Invalid credentials");
-  }
-}
+  const res = await fetch("/api/admin/login", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email, password }),
+  });
 
-export function logoutAdmin() {
-  clearAdminToken();
-  sessionStorage.removeItem("admin-authenticated");
+  if (!res.ok) {
+    const body = await res.json();
+    throw new Error(body.error ?? "Login failed");
+  }
+
+  const loginInfo: AdminLoginResponse = (await res.json()).data;
+  localStorage.setItem(TOKEN_KEY, loginInfo.token);
+  return loginInfo;
 }
 
 export function hasAdminSession() {
-  return Boolean(
-    getAdminToken() && sessionStorage.getItem("admin-authenticated") === "true"
-  );
+  return !!localStorage.getItem(TOKEN_KEY);
 }
+
+export function logoutAdmin() {
+  localStorage.removeItem(TOKEN_KEY);
+}
+
+export const getAuthHeader = () => {
+  const token = localStorage.getItem(TOKEN_KEY);
+  if (!token) return {};
+  return { Authorization: `Bearer ${token}` };
+};

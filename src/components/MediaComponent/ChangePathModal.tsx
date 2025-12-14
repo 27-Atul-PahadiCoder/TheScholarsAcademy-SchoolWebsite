@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import Modal from './Modal';
+import { Plus } from "lucide-react";
 
 interface ChangePathModalProps {
   isOpen: boolean;
@@ -19,7 +20,12 @@ const ChangePathModal: React.FC<ChangePathModalProps> = ({ isOpen, onClose, onCh
 
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
-      <h2 className="text-xl font-bold mb-4">Change Image Path</h2>
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="text-xl font-bold">Change Image Path</h2>
+        <button onClick={onClose}>
+          <Plus size={24} className="transform rotate-45" />
+        </button>
+      </div>
       <div className="mb-4">
         <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="fromPath">
           From
